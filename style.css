@@ -1,0 +1,15 @@
+.form-container{
+    margin-left: 40%;
+}
+.form_data{
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+    border-radius: 7px;
+}
+:placeholder-shown{
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+#textarea{
+    margin-top: 17px;
+}
