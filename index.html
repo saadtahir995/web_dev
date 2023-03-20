@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>The Boys</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body bgcolor="pink">
 <h1 style="margin: 40%; border: 3px solid black; display: inline;">Hello World</h1>
@@ -68,5 +69,15 @@
 	</tr>
 </table>
 <img src="img.jpg" alt="Img not Found" height="400px" width="400px" style="margin-top: 40px">
+
+<div class="form-container">
+    <form action="info.php">
+        <input type="text" name="name_info" id="name" placeholder="Enter Your Name" class="form_data"><br>
+        <input type="email" name="email_info" id="email" placeholder="Enter Email"class="form_data"><br>
+        <input type="radio" name="gender_info" id="genderA">Male        <input type="radio" name="gender_info" id="genderB">Female <br>
+        <textarea name="discription" id="textarea" cols="30" rows="10" placeholder="Write about Yourself"></textarea><br>
+        <input type="submit" value="Submit Now">
+    </form>
+</div>
 </body>
 </html>
