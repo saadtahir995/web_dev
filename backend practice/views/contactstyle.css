@@ -1,0 +1,33 @@
+input{
+    margin: 5px;
+    border: 2px solid black;
+    font-size: large;
+    border-radius: 14px;
+}
+.login_box{
+    margin: auto;
+  width: 20%;
+  padding: 10px;
+  margin-top: 50px;
+}
+#btn{
+  color: black;
+  cursor:pointer;
+  font-size: medium;
+  margin-top: 15px;
+
+}
+.navbar{
+    text-align: center;
+    background-color: aqua;
+    padding: 2px;
+    margin: 0;
+}
+textarea{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+a
+{
+  cursor:pointer;
+}

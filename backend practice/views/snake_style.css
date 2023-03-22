@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    background-image: url("wp3906251-snake-game-wallpapers.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    background-color: greenyellow;
+     list-style: none;
+}
+li{
+    margin: auto;
+    padding: 15px 0px;
+    font-size: 30px;
+    font-family: 'Rowdies', cursive;
+}
+.container{
+    border: 2px solid transparent;
+    height: 900px;
+    width: 900px;
+    margin: auto;
+    margin-top: 30px;
+
+
+}
+.grid_container{
+    border: 3px solid transparent;
+    height: 700px;
+    width: 700px;
+    margin: auto;
+    margin-top: 100px;
+    background-color:rgb(162, 196, 113);
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+.snake_head{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(209, 54, 54);
+    border: 1px solid;
+    border-radius: 20px;
+    transform: scale(1.02);
+}
+.food{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(207, 207, 28);
+    border: 1px solid;
+    position:relative;
+    top: 300px;
+    left: 300px;
+}

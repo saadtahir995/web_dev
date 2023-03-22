@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup-Login</title>
+    style
+        include login.css
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+            <a href="/"><li>Home</li></a>
+            <li id="sig">Login</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="conatiner">
+        <div class="login_box">
+            <form action="/sign_logsubmit" method="post" target="_blank">
+                <input type="email" name="mail" id="mail" placeholder="  Email address" required><br>
+                <input type="password" name="pass" id="pass" placeholder="  Password here" required><br>
+                <input type="submit" value="Login" class="btn">  
+            </form>
+            <a href="/delete_req"><input type="submit" value="Delete account" class="btn"></a>
+
+        </div>
+    </div>
+     script.
+        if (`#{isLoggedIn}`)
+        {
+            var box = document.querySelector('.login_box');
+            var n_p = document.createElement("p");
+            var p_text = document.createTextNode("Logged In Succesfully");
+            n_p.appendChild(p_text);
+            box.appendChild(n_p);
+        }          
+        if(`#{isNotLoggedIn}`)
+        {
+            var box = document.querySelector('.login_box');
+            var n_p = document.createElement("p");
+            var p_text = document.createTextNode("Wrong Password");
+            n_p.appendChild(p_text);
+            box.appendChild(n_p);
+        }
+        if(`#{isNotLoggedInn}`)
+        {
+            var box = document.querySelector('.login_box');
+            var n_p = document.createElement("p");
+            var p_text = document.createTextNode("The Account You're trying to Login is not Registered in out Database");
+            n_p.appendChild(p_text);
+            box.appendChild(n_p);
+        }
+         if(`#{isDeleted}`)
+        {
+            var box = document.querySelector('.login_box');
+            var n_p = document.createElement("p");
+            var p_text = document.createTextNode("Your Account is successfully Deleted");
+            n_p.appendChild(p_text);
+            box.appendChild(n_p);
+        }
+   
+</body>
+</html>

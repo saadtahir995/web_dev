@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTac House</title>
+    style
+        include style.css
+    script
+        include tictaclogic.js
+    
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <header>
+        <h1>TIC TAC TOE</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li> <a href="/contact">Contact</a></li>
+            <li><a href="/Services">Services</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li id="signlog"><a href="/signup_login">Sign Up/Login</a></li>
+            <li><a href="/snake_hut">Snake game</a></li>
+            <li><a href="/calculator">Simple Calculator</a></li>
+            <li><a href="/clock">Digital Clock</a></li>
+        </ul>
+    </nav>
+    <section class="display">
+        <span>Player </span><span class="players_turn">X</span>'s turn
+    </section>
+    <div class="container">
+        <div class="board">
+            <div class="grid_container">
+                <div class="tile b_remover_top b_remover_left"><span></span></div>
+                <div class="tile b_remover_top"><span></span></div>
+                <div class="tile b_remover_top b_remover_right"><span></span></div>
+                <div class="tile b_remover_left"><span></span></div>
+                <div class="tile"><span></span></div>
+                <div class="tile b_remover_right"><span></span></div>
+                <div class="tile b_remover_bottom b_remover_left"><span></span></div>
+                <div class="tile b_remover_bottom"><span></span></div>
+                <div class="tile b_remover_bottom b_remover_right"><span></span></div>
+
+            </div>
+        </div>
+        <div class="game_msg">
+            <span></span>
+        </div>
+    </div>
+    <br>
+        <input type="button" value="reset" name="reset" id="btn">
+    
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+     list-style: none;
+}
+li{
+    margin: auto;
+    padding: 15px 0px;
+    font-size: 30px;
+    font-family: 'Rowdies', cursive;
+}
+.calcgrid_container{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    margin: auto;
+    margin-bottom: 5px;
+    background-color: rgb(34, 32, 32);
+}
+.calc_tiles{
+    border: 1px solid;
+    border-radius: 60px;
+    padding-top: 25px;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.numeric_tiles{
+    background-color: grey;
+
+
+}
+.operation_tiles{
+    background-color: darkorange;
+
+}
+.calc_tiles:hover{
+    background-color: rgb(165, 135, 135);
+}
+.resultdisplay{
+   width:400px;
+   height: 30px;
+   border: 2px solid black;
+   margin: auto;
+   padding-bottom: 50px;
+   margin-top: 130px;
+   text-align: centre;
+   font-size: 50px;
+   padding-top: 30px;
+   background-color: grey;
+   color: white;
+}

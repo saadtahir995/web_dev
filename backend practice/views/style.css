@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+.board{
+    background-color: aquamarine;
+    border: 2px solid;
+    border-color: black;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 70px;
+    border-width: 5px;
+}
+.grid_container{
+    display: grid;
+    background-color: rgba(243, 255, 240, 0.521);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    margin-top: 80px;
+}
+.tile{
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 40px;
+    padding-top: 30%;
+    text-align: center;
+    font-family: 'Moon Dance', cursive;
+    font-weight: bolder;
+}
+
+header{
+    text-align: center;
+    border: 3px solid black;
+    background-color:aquamarine;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+.display{
+    text-align: center;
+    margin-top: 50px;
+    font-size: larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(102, 163, 204);
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    flex-direction: row;
+    background-color: aquamarine;
+    padding: 10px;
+    border: 2px solid;
+}
+li{
+    padding-left :27px;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:blue;
+}
+span{
+    font-size:30px;
+    margin: auto;
+}
+.b_remover_top
+{
+   border-top: none;
+}
+.b_remover_bottom
+{
+ border-bottom: none;   
+}
+.b_remover_left
+{
+    border-left: none;
+}
+.b_remover_right
+{
+    border-right: none;
+}
+.tile:hover{
+    background-color: rgb(197, 184, 209);
+}
+.game_msg{
+    display: flex;
+    padding-top: 30px;
+    font-size: 30px;
+    margin: auto;
+    padding-left: 40%;
+    color: red;
+}
+#btn{
+    color:black;
+    background-color: yellow;
+    font-size: 30px;
+    margin-left: 47%;
+    border:3px solid grey;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+

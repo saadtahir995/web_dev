@@ -1,0 +1,55 @@
+input{
+    margin: 5px;
+    border: 2px solid black;
+    font-size: large;
+    border-radius: 14px;
+}
+.login_box{
+    margin: auto;
+  width: 20%;
+  padding: 10px;
+  margin-top: 50px;
+}
+#btn{
+  color: black;
+  cursor:pointer;
+  font-size: medium;
+  margin-top: 15px;
+
+}
+.navbar{
+    text-align: center;
+    background-color: aqua;
+    padding: 2px;
+    margin: 0;
+}
+textarea{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#btnn{
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+li{
+    padding: 10px;
+    text-shadow: 20px;
+    font-size: 30px;
+    font-family: cursive;
+    padding-left: 0%;
+
+}
+#sig{
+    padding-left: 37%;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: cursive;
+}
+a{
+    text-decoration: none;
+}
