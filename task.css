@@ -1,7 +1,4 @@
-.nav_container{
-    background-color: aqua;
-    padding: 5px;
-}
+
 .items{
     
     margin-left: 5px;
@@ -10,13 +7,16 @@
     margin-left: 5px;
 }
 
-li{
+lists{
     margin-left: 50px;
     display: inline;
-    font-size: larger;
+    
+}
+li{
+    list-style-type: none;
 }
 a{
-  color: blue;
+  color:black;
 }
 .para{
     margin-top: 10%;
@@ -25,7 +25,31 @@ p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
 }
-*{
-    
+.list2{
+    position: relative;
+    left: 80%;
+    display: inline;
+    font-size: larger;
+    color: aliceblue;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 50px;
+
+}
+body{
+
+    background-color: greenyellow;
+
+}
+.nav_container{
+    background-color: green;
+}
+.credits_cont{
+    margin-left: 75%;
+    border: 3px solid black;
+    padding-left:40px;
+    border-radius: 30px;
+    background-color: aquamarine;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
 }
 
