@@ -1,83 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>The Boys</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body bgcolor="pink">
-<h1 style="margin: 40%; border: 3px solid black; display: inline;">Hello World</h1>
-<p style="text-align: center;">She had been told time and time again that the most important steps were the first and the last. It was something that she carried within her in everything she did, <strong> but then he showed up and disrupted everything. He told her that she had it wrong. The first step wasn't the most important. The last step wasn't the most important.</strong> It was the next step that was the most important.</p>
-<table border="3px" style="text-align: center; margin-left: 40%;margin-top: 70px;">
-	<tr>
-		<td style="padding: 15px">
-			<strong>Name</strong>
-		</td>
-		<td>
-			<strong>Age</strong>
-		</td>
-		<td>
-			<strong>Height</strong>
-		</td>
-		<td>
-			<strong>Gender</strong>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Saad
-		</td>
-		<td>
-			21
-		</td>
-		<td>
-			6'1
-		</td>
-		<td>
-			Male
-		</td>
-		
-	</tr>
-	<tr>
-		<td>
-			Saad
-		</td>
-		<td>
-			21
-		</td>
-		<td>
-			6'1
-		</td>
-		<td>
-			Male
-		</td>
-		
-	</tr>
-	<tr>
-		<td>
-			Saad
-		</td>
-		<td>
-			21
-		</td>
-		<td>
-			6'1
-		</td>
-		<td>
-			Male
-		</td>
-		
-	</tr>
-</table>
-<img src="img.jpg" alt="Img not Found" height="400px" width="400px" style="margin-top: 40px">
+<html lang="en">
 
-<div class="form-container">
-    <form action="info.php">
-        <input type="text" name="name_info" id="name" placeholder="Enter Your Name" class="form_data"><br>
-        <input type="email" name="email_info" id="email" placeholder="Enter Email"class="form_data"><br>
-        <input type="radio" name="gender_info" id="genderA">Male        <input type="radio" name="gender_info" id="genderB">Female <br>
-        <textarea name="discription" id="textarea" cols="30" rows="10" placeholder="Write about Yourself"></textarea><br>
-        <input type="submit" value="Submit Now">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <script src="database.js"></script>
+</head>
+
+<body> 
+    <form action="/dataexport" method="post" target="blank">
+        <input type="text" name="fname" id="fname" placeholder="  First name" required><br>
+        <input type="text" name="lname" id="lname" placeholder="  Last name" required><br>
+        <input type="email" name="mail" id="mail" placeholder="  Email address" required><br>
+        <input type="password" name="pass" id="pass" placeholder="  Password here" required><br>
+        <input type="submit" value="Create New Account" id="btn">
+
+
+
+
+
+
     </form>
-</div>
 </body>
+
 </html>
