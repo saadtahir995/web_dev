@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloria Jeans Menu</title>
+    style
+        include style.css
+    script
+        include logic.js
+    
+</head>
+<body>
+    <div class="nav1_cont">
+       <img id="img1" src="logo.png" alt="cannot be rendered" srcset="">
+       <div class="lists">
+        <ul id="nav_list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about_us">About</a></li>
+            <li><a href="/contact_us">Contact</a></li>
+            <li><a href="/more_info">Info</a></li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="menu_cont">
+        <div class="banner"><img id="img2" src="logo2.jpg" alt="cannot be rendered" srcset="">
+        <h2 style="position: absolute; top: 16%; color: wheat; left: 7%; font-size: 2.0vw;">OUR MENU</h2>
+        <h3 onclick="tea()"style="position: absolute; top: 24%; color: bisque; left: 7%; font-size: 1.5vw; cursor: pointer;">TEA</h3>
+        <div class="tea_menu">
+            <ul>
+                <li>Kashmiri Chai    <button style="width: 8%;" onclick="incre('kash')" type="button">+</button> <span id="total_kchai">0</span>*200<button onclick="decre('kash')" style="width: 8%;" type="button">-</button> <button onclick="cal('kash')"  type="button">Add to Cart</button>TOTAL: <span id="total"></span></li><br>
+                <li>Karak Chai    <button style="width: 8%;" onclick="incre('karak')" type="button">+</button> <span id="total_karakchai">0</span>*250<button onclick="decre('karak')" style="width: 8%;" type="button">-</button> <button onclick="cal('karak')"  type="button">Add to Cart</button>TOTAL: <span id="total_k"></span></li> <br>
+                <li>Peshawwari Chai   <button style="width: 8%;" onclick="incre('pesh')" type="button">+</button> <span id="total_peshchai">0</span>*150<button onclick="decre('pesh')" style="width: 8%;" type="button">-</button> <button onclick="cal('pesh')"  type="button">Add to Cart</button>TOTAL: <span id="total_pesh"></span></li><br>
+                <li>Elaichi chai   <button style="width: 8%;" onclick="incre('elaich')" type="button">+</button> <span id="total_elaichchai">0</span>*300<button onclick="decre('elaich')" style="width: 8%;" type="button">-</button> <button onclick="cal('elaich')"  type="button">Add to Cart</button>TOTAL: <span id="total_elaich"></span></li><br>
+                <li>Herbalchai   <button style="width: 8%;" onclick="incre('herb')" type="button">+</button> <span id="total_herbchai">0</span>*350<button onclick="decre('herb')" style="width: 8%;" type="button">-</button> <button onclick="cal('herb')"  type="button">Add to Cart</button>TOTAL: <span id="total_herb"></span></li><br>
+            </ul>
+            
+        </div>
+
+        <h3 onclick="hotc()"style="position: absolute; top: 24%; color: bisque; left: 33%; font-size: 1.5vw; cursor: pointer;">Hot Coffee</h3>
+        <div class="hotc_menu">
+            <ul>
+                <li>Americano    <button style="width: 8%;" onclick="incre('amer')" type="button">+</button> <span id="total_amer">0</span>*600<button onclick="decre('amer')" style="width: 8%;" type="button">-</button> <button onclick="cal('amer')"  type="button">Add to Cart</button>TOTAL: <span id="totalamer"></span></li><br>
+                <li>Latte    <button style="width: 8%;" onclick="incre('latt')" type="button">+</button> <span id="total_latt">0</span>*850<button onclick="decre('latt')" style="width: 8%;" type="button">-</button> <button onclick="cal('latt')"  type="button">Add to Cart</button>TOTAL: <span id="totallatt"></span></li><br>
+                <li>Cappuccino   <button style="width: 8%;" onclick="incre('capp')" type="button">+</button> <span id="total_capp">0</span>*1200<button onclick="decre('capp')" style="width: 8%;" type="button">-</button> <button onclick="cal('capp')"  type="button">Add to Cart</button>TOTAL: <span id="totalcapp"></span></li><br>
+                
+            </ul>
+            
+        </div>
+
+
+        <h3 onclick="coldc()"style="position: absolute; top: 24%; color: bisque; left: 57%; font-size: 1.5vw; cursor: pointer;">Cold Coffee</h3>
+        <div class="coldc_menu">
+            <ul>
+                <li>Frappuccino    <button style="width: 8%;" onclick="incre('frapp')" type="button">+</button> <span id="total_frapp">0</span>*700<button onclick="decre('frapp')" style="width: 8%;" type="button">-</button> <button onclick="cal('frapp')"  type="button">Add to Cart</button>TOTAL: <span id="totalfrapp"></span></li><br>
+                <li>Coffee Smoothies    <button style="width: 8%;" onclick="incre('smooth')" type="button">+</button> <span id="total_smooth">0</span>*1050<button onclick="decre('smooth')" style="width: 8%;" type="button">-</button> <button onclick="cal('smooth')"  type="button">Add to Cart</button>TOTAL: <span id="totalsmooth"></span></li><br>
+                <li>Iced Coffee   <button style="width: 8%;" onclick="incre('iced')" type="button">+</button> <span id="total_iced">0</span>*1250<button onclick="decre('iced')" style="width: 8%;" type="button">-</button> <button onclick="cal('iced')"  type="button">Add to Cart</button>TOTAL: <span id="totaliced"></span></li><br>
+                
+            </ul>
+            
+        </div>
+
+        <h3 onclick="dess()"style="position: absolute; top: 24%; color: bisque; left: 77%; font-size: 1.5vw; cursor: pointer;">Dessert</h3>
+        <div class="dess_menu">
+            <ul>
+                <li>Brownies    <button style="width: 8%;" onclick="incre('brown')" type="button">+</button> <span id="total_brown">0</span>*1500<button onclick="decre('brown')" style="width: 8%;" type="button">-</button> <button onclick="cal('brown')"  type="button">Add to Cart</button>TOTAL: <span id="totalbrown"></span></li><br>
+                <li>Muffins    <button style="width: 8%;" onclick="incre('muff')" type="button">+</button> <span id="total_muff">0</span>*1700<button onclick="decre('muff')" style="width: 8%;" type="button">-</button> <button onclick="cal('muff')"  type="button">Add to Cart</button>TOTAL: <span id="totalmuff"></span></li><br>
+                <li>Cheesecake   <button style="width: 8%;" onclick="incre('chee')" type="button">+</button> <span id="total_chee">0</span>*3000<button onclick="decre('chee')" style="width: 8%;" type="button">-</button> <button onclick="cal('chee')"  type="button">Add to Cart</button>TOTAL: <span id="totalchee"></span></li><br>
+                
+            </ul>
+            
+        </div>
+
+
+         <div class="cart_cont">
+            <h3 style="top: 80%; left: 7%; font-size: 1.7vw; color: bisque;">Cart items:</h3>
+            <div style="top: 85%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 88%; left: 7%;"class="cart_item"><span></span></div>
+            <div style="top: 91%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 94%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 97%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 100%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 103%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 106%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 109%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 112%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 115%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 118%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 121%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 124%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 127%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 130%; left: 7%;" class="cart_item"><span></span></div>
+            <div style="top: 133%; left: 7%;" class="cart_item"><span></span></div>
+         </div>
+
+         <div id="box"><span>GRAND TOTAL:</span></div>
+         <div class="total_box"><span>0 Rs</span></div>
+
+         <button onclick="datasender()" id="chkout">Checkout</button>
+
+        
+        </div>
+        
+
+    </div> 
+</body>
+</html>
