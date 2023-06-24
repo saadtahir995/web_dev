@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gloria Jeans Menu</title>
     style
-        include style.css
+        include ../stylesheets/style.css
     script
-        include logic.js
+        include ../js/logic.js
     
 </head>
 <body>
@@ -19,12 +19,16 @@
             <li><a href="/about_us">About</a></li>
             <li><a href="/contact_us">Contact</a></li>
             <li><a href="/more_info">Info</a></li>
+            <li><a href="/logout" class="logout-button">Logout</a></li>
         </ul>
     </div>
-
+    
     </div>
+    
+
     <div class="menu_cont">
         <div class="banner"><img id="img2" src="logo2.jpg" alt="cannot be rendered" srcset="">
+            <h2 id="user_det">Welcome #{name}!</h2><br>
         <h2 style="position: absolute; top: 16%; color: wheat; left: 7%; font-size: 2.0vw;">OUR MENU</h2>
         <h3 onclick="tea()"style="position: absolute; top: 24%; color: bisque; left: 7%; font-size: 1.5vw; cursor: pointer;">TEA</h3>
         <div class="tea_menu">
