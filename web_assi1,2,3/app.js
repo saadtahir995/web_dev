@@ -92,7 +92,7 @@ app.post('/userchk',(req,ress)=>{
             ress.render('htmls/usrlogf');
 
         } else {
-            db.query(`Select * from user_cred where user_pwd = "${pass}"`, (err, resultt) => {
+            db.query(`Select * from user_cred where user_pwd = "${pass}" and user_email = "${mail}"`, (err, resultt) => {
                 if (!resultt?.[0]?.user_pwd) {
                     ress.render('htmls/usrlogf');
 
