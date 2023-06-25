@@ -208,6 +208,19 @@ app.post('/item_data',(req,res)=>{
     }
 
 });
+
+app.post('/dispatch',(req,res)=>{
+
+    if(req.body.length>0)
+    {
+            db.query(`delete from cartitems_data`,(err,result)=>{
+                if(err)throw err;
+            });
+        }
+        
+
+    
+})
 app.listen(port,()=>{
     console.log(`listening on port: ${port}`);
 });

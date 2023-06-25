@@ -6,8 +6,7 @@
     <title>Gloria Jeans Menu</title>
     style
         include ../stylesheets/style.css
-    script
-        include ../js/logic.js
+    
     
 </head>
 <body>
@@ -100,13 +99,16 @@
 
          <div id="box"><span>GRAND TOTAL:</span></div>
          <div class="total_box"><span>0 Rs</span></div>
-
+         
+         <div id="outpt" style="position: absolute; top: 90%; left: 41%;"><span></span></div>
          <button onclick="datasender()" id="chkout">Checkout</button>
 
-        
+                 
         </div>
         
 
-    </div> 
+    </div>
+    script
+        include ../js/logic.js 
 </body>
 </html>

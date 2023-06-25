@@ -474,11 +474,41 @@ categ[i].forEach(element => {
 }
 function datasender()
 {
+  const x= Array.from(document.querySelectorAll('.cart_item')); var flag1=0;var flag2=0 ;var categg=[];
+  var dataarray = [tea_menu,hotc_menu,coldc_menu,desst];
+  for (let i = 0; i < 4; i++) {
+    categg[i]=Object.keys(dataarray[i]);   
+  }
+for (let i = 0; i < 16; i++) {
+
+    if(x[i].textContent.trim() === '')
+    {
+        flag2=1;
+        
+    }
+    else
+    {
+      flag1=1;
+    }
+
+}
+    if(flag1===1){
+  document.getElementById('outpt').innerHTML="your order has been placed successfully";
+  for (let i = 0; i < 16; i++) {
+    x[i].innerHTML="";
+    
+  }
 var xhr= new XMLHttpRequest();
 xhr.open("POST","/item_data",true);
 xhr.setRequestHeader("Content-Type","application/json");
-var dataarray = [tea_menu,hotc_menu,coldc_menu,desst];
 xhr.send(JSON.stringify(dataarray));
+    }
+    else
+    {
+      document.getElementById('outpt').innerHTML="Add atleast one item to cart to Successfully Place Your Order";
+
+    }
+  
 }
 function hotc()
 {

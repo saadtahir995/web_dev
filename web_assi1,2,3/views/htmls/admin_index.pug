@@ -8,8 +8,7 @@
         include ../stylesheets/admin_index.css
     script.
       const data = !{JSON.stringify(result)};
-    script
-        include ../js/admin.js 
+     
 
   
 </head>
@@ -92,10 +91,12 @@
         <div class="orders"><span></span></div>
         <div class="orders"><span></span></div>
         <div class="orders"><span></span></div>
-        
-
       </div>
+      <button type="button" class="dispatch-button" onclick="dispatcher()">Dispatch Now</button>
+      <div id="msg_field"><span></span></div>
     </div>
   </div>
+  script
+        include ../js/admin.js
 </body>
 </html>

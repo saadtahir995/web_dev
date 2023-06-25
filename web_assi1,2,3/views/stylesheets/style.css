@@ -147,3 +147,10 @@ a{
   .logout-button:hover {
     background-color: #d32f2f;
   }
+ #outpt{
+    background-color: bisque;
+    color: rgb(41, 24, 24);
+    border: 2px solid transparent;
+ }
+
+  
