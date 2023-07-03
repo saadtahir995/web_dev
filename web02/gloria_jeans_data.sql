@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 25, 2023 at 12:10 PM
+-- Generation Time: Jul 03, 2023 at 03:22 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -49,6 +49,7 @@ INSERT INTO `admin_cred` (`user_id`, `user_name`, `user_email`, `user_pwd`) VALU
 
 CREATE TABLE `cartitems_data` (
   `item_id` int(11) NOT NULL,
+  `customer_id` int(10) NOT NULL,
   `item_name` varchar(255) NOT NULL,
   `item_count` int(10) NOT NULL,
   `total_bill` int(10) NOT NULL
@@ -131,7 +132,7 @@ ALTER TABLE `admin_cred`
 -- AUTO_INCREMENT for table `cartitems_data`
 --
 ALTER TABLE `cartitems_data`
-  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=220;
+  MODIFY `item_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1059;
 
 --
 -- AUTO_INCREMENT for table `contact_data`

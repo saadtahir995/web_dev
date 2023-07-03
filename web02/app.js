@@ -98,6 +98,7 @@ app.post('/userchk',(req,ress)=>{
 
                 } else {
                     req.session.username=resultt[0].user_name;
+                    req.session.userid=resultt[0].user_id;
                     req.session.logedin=true;
                     ress.redirect('mainpage');
 
@@ -196,7 +197,7 @@ app.post('/item_data',(req,res)=>{
     for (let i = 0; i < 4; i++) {
     items[i].forEach(element => {
         if(data[i][element][2]>0){
-        db.query(`INSERT INTO cartitems_data (item_name, item_count, total_bill) values ("${element}","${data[i][element][2]}","${data[i][element][3]}")`,(err,res)=>{
+        db.query(`INSERT INTO cartitems_data (customer_id, item_name, item_count, total_bill) values ("${req.session.userid}","${element}","${data[i][element][2]}","${data[i][element][3]}")`,(err,res)=>{
             if(err)throw err;
             
         });
@@ -213,7 +214,7 @@ app.post('/dispatch',(req,res)=>{
 
     if(req.body.length>0)
     {
-            db.query(`delete from cartitems_data`,(err,result)=>{
+            db.query(`delete from cartitems_data `,(err,result)=>{
                 if(err)throw err;
             });
         }
@@ -237,7 +238,7 @@ app.post('/dbupdate',(req,res)=>{
     for (let i = 0; i < 4; i++) {
     items[i].forEach(element => {
         if(data[i][element][0]>0){
-        db.query(`INSERT INTO cartitems_data (item_name, item_count, total_bill) values ("${element}","${data[i][element][0]}","${data[i][element][1]}")`,(err,res)=>{
+        db.query(`INSERT INTO cartitems_data (customer_id,item_name, item_count, total_bill) values ("${req.session.userid}","${element}","${data[i][element][0]}","${data[i][element][1]}")`,(err,res)=>{
             if(err)throw err;
             
         });
@@ -267,6 +268,11 @@ app.get('/update',(req,res)=>{
     });
    
 });
+app.get('/api/customerdata',(req,res)=>{
+    res.json({
+        userid: req.session.userid
+    });
+})
 app.listen(port,()=>{
     console.log(`listening on port: ${port}`);
 });
