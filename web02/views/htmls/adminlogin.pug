@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloria Jeans Menu</title>
+    style
+        include ../stylesheets/adminlogin.css
+  
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="logo">
+        <a href="/"><img src="gloria-jeans.jpg" alt="Gloria Jeans Logo" style="height: 20%; width: 20%;"></a>
+      </div>
+      <h2>Admin Login</h2>
+      <form action="/adminchk" method="post">
+        <div class="form-group">
+          <label for="username">Email</label>
+          <input type="email" id="username" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="pwd" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="button">Log In</button>
+        <p class="error" id="login-error"></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

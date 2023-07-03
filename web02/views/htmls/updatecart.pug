@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Cart</title>
+    style
+        include ../stylesheets/updatec.css
+    script.
+        const data = !{JSON.stringify(data)};
+        const dbdata = !{JSON.stringify(result)};
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Current Items in Cart:</h1>
+    <div class="table_cont" style="display: flex;">
+    <div id="table_cont"></div>
+
+    <h1 style="position: absolute; top: 6% ;left:51%;">New Items:</h1><div id="table_cont2"></div>
+  </div>
+    <button class="button" onclick="datasend();location.href='/update'";>Update Cart</button>
+    <div id="msg"></div>
+    <div class="available-items">
+      <h3>Available Items:</h3>
+      <div class="tile"></div><button onclick="updatecart('kashmiriChai')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('Karakchai')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('peshawarichai')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('Elaichichai')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('Herbalchai')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('Americano')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('Latte')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('Cappuccino')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('Frappuccino')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('Coffee_Smoothies')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('Iced_Coffee')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('Brownies')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('Muffins')">Add to Card</button><br>
+      <div class="tile"></div><button onclick="updatecart('Cheesecake')">Add to Card</button><br>
+    </div>
+  </div>
+  script
+        include ../js/update.js
+
+
+</body>
+</html>
