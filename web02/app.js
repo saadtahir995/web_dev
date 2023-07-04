@@ -262,7 +262,7 @@ app.post('/update_cart',(req,res)=>{
 });
 app.get('/update',(req,res)=>{
     const data=req.session.data;
-    db.query(`Select * from cartitems_data`,(err,result)=>{
+    db.query(`Select * from cartitems_data where customer_id=${req.session.userid}`,(err,result)=>{
         
         res.status(200).render('htmls/updatecart',{data,result});
     });
